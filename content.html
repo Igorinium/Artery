@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+	<title>AQUATIC ARTERY</title>
+
+	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=no">
+	<meta name="viewport" content="width=device-width, initial scale=1.0, maximum scale=1.0, user-scalable=0" />
+	<link rel="stylesheet" href="css/scss.css">
+	<script src="js/wow.min.js"></script>
+</head>
+<style>
+	section {
+		padding: 0;
+		padding-top: 160px;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+	}
+
+	.news__img {
+		max-width: 800px;
+		margin: 0 auto;
+		height: unset;
+		margin-bottom: 60px;
+	}
+
+
+	.news__item-text {
+		-webkit-line-clamp: unset;
+		font-size: 18px;
+		margin-bottom: 40px;
+	}
+
+	.news__link {
+		display: none;
+	}
+
+	@media(max-width:992px) {
+		section {
+			padding-top: 120px;
+		}
+
+		.news__img {
+			margin-bottom: 40px;
+		}
+	}
+
+	@media(max-width:480px) {
+		section {
+			padding-top: 80px;
+		}
+
+		.news__img {
+			margin-bottom: 30px;
+		}
+
+		.news__item-text {
+			font-size: 16px;
+		}
+	}
+</style>
+
+<body class="en">
+	<div class="wrapper">
+		<header class="header">
+			<div class="container">
+				<div class="header__body">
+					<div class="header__gray"></div>
+					<div class="language-icon">
+						<img src="img/svg/estonia.svg" id="en" class="language-icon__icon active">
+						<img src="img/svg/open-close-arrow.svg" alt="" class="open-close-arrow">
+						<div class="language-icon__list">
+							<img src="img/svg/uk.svg" id="ru" class="language-icon__icon ">
+						</div>
+					</div>
+					<div class="header__burger">
+						<span></span>
+					</div>
+					<nav class="header__nav">
+						<ul class="header__list" lang="uk">
+							<li><a href="index.html#main-block">Головна</a></li>
+							<li><a href="index.html#about">Про нас</a></li>
+							<li><a href="index.html#consortium">Консорціум</a></li>
+							<li><a href="index.html#activities">Діяльність</a></li>
+							<li><a href="index.html#projects">Проекти</a></li>
+							<li><a href="index.html#news">Новини</a></li>
+							<li><a href="index.html#contacts">Контакти</a></li>
+						</ul>
+						<ul class="header__list" lang="en">
+							<li><a href="index.html#main-block">Home</a></li>
+							<li><a href="index.html#about">About</a></li>
+							<li><a href="index.html#consortium">Consortium</a></li>
+							<li><a href="index.html#activities">Activities</a></li>
+							<li><a href="index.html#projects">Projects</a></li>
+							<li><a href="index.html#news">News</a></li>
+							<li><a href="index.html#contacts">Contacts</a></li>
+						</ul>
+					</nav>
+				</div>
+			</div>
+		</header>
+		<section class="fullscreen">
+			<div class="container">
+				<div class="big-content" id="big-content">
+
+				</div>
+			</div>
+			<footer class="footer page-1__footer altColor">
+				<div class="container">
+					<div class="footer__body">
+						<div class="footer__item">
+							Sumy, 40007, Ukraine
+						</div>
+						<div class="footer__item">
+							aquatic.arteria@gmail.com
+						</div>
+						<div class="footer__item">
+							+38099--
+						</div>
+					</div>
+				</div>
+			</footer>
+		</section>
+
+	</div>
+	<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+	<script>	$(document).ready(function () {
+			$('#big-content').html(localStorage.getItem('text'));
+		});
+	</script>
+	<script src="js/script.js"></script>
+</body>
+
+</html>
